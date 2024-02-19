@@ -1,0 +1,18 @@
+@keyframes boxShadowAnimation {
+    0% {
+        box-shadow: 0 0 20px rgb(242, 140, 140); /* Initial box shadow colors */
+    }
+  30% {
+    box-shadow: 0 0 20px rgb(242, 140, 140); /* Initial box shadow colors */
+  }
+75% {
+    box-shadow: 0 0 20px rgb(106, 57, 57); /* Initial box shadow colors */
+}
+  100% {
+    box-shadow: 0 0 20px rgb(242, 40, 140);
+  }
+}
+
+.box-shadow-animation {
+  animation: boxShadowAnimation 5s infinite; /* Apply the keyframe animation */
+}
