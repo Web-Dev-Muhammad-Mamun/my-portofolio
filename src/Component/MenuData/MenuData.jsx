@@ -19,6 +19,11 @@ export const MenuData = [
   },
   {
     id: 4,
+    link: "experience",
+    href: "experience",
+  },
+  {
+    id: 5,
     link: "portfolio",
     href: "portfolio",
   },

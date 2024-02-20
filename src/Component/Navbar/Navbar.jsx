@@ -12,7 +12,7 @@ const Navbar = () => {
       <div>
         <h1 className='text-5xl font-signiture ml-2'>Mamun</h1>
       </div>
-
+       
       <ul className='hidden md:flex'>
         {MenuData.map((link) => {
           return (
@@ -20,14 +20,15 @@ const Navbar = () => {
               key={link.id}
               className='px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200'>
               <Link
-              to={link.href}
-              spy={true}
-              smooth={true}
-              offset={-60} // Adjust as needed to account for any fixed header
-              duration={1000}>
-              {link.link}
-            </Link>
-
+                activeClass="active"
+                to={link.href}
+                spy={true}
+                smooth={true}
+                offset={-60}
+                duration={1000}
+              >
+                {link.link}
+              </Link>
             </li>
           );
         })}
@@ -47,8 +48,19 @@ const Navbar = () => {
             return (
               <li
                 key={link.id}
-                className='px-4 cursor-pointer capitalize py-4 text-4xl'>
-                {link.link}
+                className='px-4 cursor-pointer capitalize py-4 text-4xl'
+                onClick={() => setIsClicked(false)}
+              >
+                <Link
+                  activeClass="active"
+                  to={link.href}
+                  spy={true}
+                  smooth={true}
+                  offset={-60}
+                  duration={1000}
+                >
+                  {link.link}
+                </Link>
               </li>
             );
           })}
