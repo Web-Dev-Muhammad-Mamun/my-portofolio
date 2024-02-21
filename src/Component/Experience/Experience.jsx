@@ -1,11 +1,11 @@
 import React from 'react'
-import html from "../../public/html.png"
-import css from "../../public/raw_css.png"
-import javascript from "../../public/javascript.png"
-import react from "../../public/react.png"
-import tailwind from "../../public/tailwind.png"
-import node from "../../public/node_js2.png"
-import github from "../../public/github.png"
+import html from "../../../public/html.png"
+import css from "../../../public/raw_css.png"
+import javascript from "../../../public/javascript.png"
+import react from "../../../public/react.png"
+import tailwind from "../../../public/tailwind.png"
+import node from "../../../public/node_js2.png"
+import github from "../../../public/github.png"
 
 const Experience = () => {
 const teck = [

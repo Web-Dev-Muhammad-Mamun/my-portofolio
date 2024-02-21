@@ -3,7 +3,7 @@ import App from "./../../App";
 import Home from "../Home/Home";
 import About from "../About/About";
 import Portfolio from "../Portfolio/Portfolio";
-import Experience from "../../Experience/Experience";
+import Experience from "../Experience/Experience";
 
 export const Routes = createBrowserRouter([
   {
@@ -24,7 +24,7 @@ export const Routes = createBrowserRouter([
       },
       {
         path: "/experience",
-        element: <Experience />,
+        element: <Experience />
       },
     ],
   },
