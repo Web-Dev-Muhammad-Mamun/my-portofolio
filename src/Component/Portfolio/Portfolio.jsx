@@ -1,6 +1,6 @@
 import React from "react";
 import eCommerceSite from "../../../public/shopping-cart-e-commerce.png";
-import miniCalculator from "../../../public/mini-calculater.png";
+import miniCalender from "../../../public/mini-calculater.png";
 import taksMenegment from "../../../public/taksMenegment.png";
 
 import halalJibika from "../../../public/halalJibika.png";
@@ -14,35 +14,42 @@ const Portfolio = () => {
       id: 1,
       src: eCommerceSite,
       lives: "https://shopping-cart-e-commerce.vercel.app/",
+      codes:
+        "https://github.com/Web-Dev-Muhammad-Mamun/Shopping-Cart-E-commece",
     },
 
     {
       id: 2,
-      src: miniCalculator,
+      src: miniCalender,
       lives: "https://mini-calender-beta.vercel.app/",
+      codes: "https://github.com/Web-Dev-Muhammad-Mamun/Mini-Calender",
     },
 
     {
       id: 3,
       src: taksMenegment,
-      lives : "https://to-do-app-puce-omega.vercel.app/"
+      lives: "https://to-do-app-puce-omega.vercel.app/",
+      codes: "https://github.com/Web-Dev-Muhammad-Mamun/Task-management",
     },
 
     {
       id: 4,
       src: halalJibika,
-      lives : "https://halal-jibika2024.vercel.app/"
+      lives: "https://halal-jibika2024.vercel.app/",
+      codes: "https://github.com/Web-Dev-Muhammad-Mamun/Halal-Jibika",
     },
     {
       id: 5,
       src: tasbih,
-      lives : "https://tasbih-seven.vercel.app/"
+      lives: "https://tasbih-seven.vercel.app/",
+      codes: "https://github.com/Web-Dev-Muhammad-Mamun/Tasbih",
     },
 
     {
       id: 6,
       src: megamart,
-      lives : "https://mega-mart-ochre.vercel.app/"
+      lives: "https://mega-mart-ochre.vercel.app/",
+      codes: "https://github.com/Web-Dev-Muhammad-Mamun/MegaMart",
     },
   ];
   return (
@@ -58,7 +65,7 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right now</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {Portfolios.map(({ id, src, lives }) => {
+          {Portfolios.map(({ id, src, lives, codes }) => {
             return (
               <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
                 <img
@@ -71,7 +78,7 @@ const Portfolio = () => {
                     <a href={lives}>demo</a>
                   </button>
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                    Code
+                    <a href={codes}>Code</a>
                   </button>
                 </div>
               </div>
