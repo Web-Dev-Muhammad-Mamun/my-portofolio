@@ -52,6 +52,7 @@ const Navbar = () => {
                 onClick={() => setIsClicked(false)}
               >
                 <Link
+                onClick={() => setIsClicked(!isclicked)}
                   activeClass="active"
                   to={link.href}
                   spy={true}
