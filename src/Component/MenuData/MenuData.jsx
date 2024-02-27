@@ -14,8 +14,8 @@ export const MenuData = [
   },
   {
     id: 3,
-    link: "contact",
-    href: "contact",
+    link: "portfolio",
+    href: "portfolio",
   },
   {
     id: 4,
@@ -24,8 +24,8 @@ export const MenuData = [
   },
   {
     id: 5,
-    link: "portfolio",
-    href: "portfolio",
+    link: "contact",
+    href: "contact",
   },
 ];
 

@@ -8,6 +8,7 @@ import halalJibika from "../../../public/halalJibika.png";
 import tasbih from "../../../public/tasbih.png";
 
 import megamart from "../../../public/megamart.png";
+import weatherApp from "../../../public/weatherApp.png";
 const Portfolio = () => {
   const Portfolios = [
     {
@@ -16,6 +17,7 @@ const Portfolio = () => {
       lives: "https://shopping-cart-e-commerce.vercel.app/",
       codes:
         "https://github.com/Web-Dev-Muhammad-Mamun/Shopping-Cart-E-commece",
+        names : 'E-commerce website'
     },
 
     {
@@ -23,6 +25,7 @@ const Portfolio = () => {
       src: miniCalender,
       lives: "https://mini-calender-beta.vercel.app/",
       codes: "https://github.com/Web-Dev-Muhammad-Mamun/Mini-Calender",
+      names : 'Mini-Calender'
     },
 
     {
@@ -30,6 +33,7 @@ const Portfolio = () => {
       src: taksMenegment,
       lives: "https://to-do-app-puce-omega.vercel.app/",
       codes: "https://github.com/Web-Dev-Muhammad-Mamun/Task-management",
+      names : 'Task-Management'
     },
 
     {
@@ -37,12 +41,14 @@ const Portfolio = () => {
       src: halalJibika,
       lives: "https://halal-jibika2024.vercel.app/",
       codes: "https://github.com/Web-Dev-Muhammad-Mamun/Halal-Jibika",
+      names : 'Halal-Jibika'
     },
     {
       id: 5,
       src: tasbih,
       lives: "https://tasbih-seven.vercel.app/",
       codes: "https://github.com/Web-Dev-Muhammad-Mamun/Tasbih",
+      names : 'Tasbih'
     },
 
     {
@@ -50,6 +56,14 @@ const Portfolio = () => {
       src: megamart,
       lives: "https://mega-mart-ochre.vercel.app/",
       codes: "https://github.com/Web-Dev-Muhammad-Mamun/MegaMart",
+      names : 'MegaMart'
+    },
+    {
+      id: 7,
+      src: weatherApp,
+      lives: "https://weather-app-six-nu-99.vercel.app/",
+      codes: "https://github.com/Web-Dev-Muhammad-Mamun/weather-app",
+      names : 'Weather App'
     },
   ];
   return (
@@ -65,7 +79,7 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right now</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {Portfolios.map(({ id, src, lives, codes }) => {
+          {Portfolios.map(({ id, src, lives, codes, names }) => {
             return (
               <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
                 <img
@@ -73,13 +87,21 @@ const Portfolio = () => {
                   src={src}
                   alt=""
                 />
-                <div className="flex items-center justify-center">
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                    <a href={lives}>demo</a>
-                  </button>
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                    <a href={codes}>Code</a>
-                  </button>
+                <div
+                  className="flex flex-col items-center py-6 
+                "
+                >
+                  <p className="text-2xl hover:scale-105 duration-200 ">
+                    {names}
+                  </p>
+                  <div className="flex items-center justify-center">
+                    <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200 ">
+                      <a href={lives}>Demo</a>
+                    </button>
+                    <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200 ">
+                      <a href={codes}>Code</a>
+                    </button>
+                  </div>
                 </div>
               </div>
             );
