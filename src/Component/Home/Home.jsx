@@ -7,10 +7,10 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="max-w-screen-lg mx-auto flex flex-col lg:flex-row items-center justify-between  px-4 h-screen"
+      className="max-w-screen-lg mx-auto flex flex-col lg:flex-row md:flex-row md:h-[600px] md:mb-[-400px] lg:mb-[0px] md:px-10 items-center justify-between px-4 h-screen"
     >
       {/*  */}
-      <div className="mt-16">
+      <div className="mt-16 ">
         {/*  */}
         <h1 className=" text-2xl sm:text-[2.5rem] font-bold text-[#454240] mt-10 mx-auto leading-10">
           I'm Mamun and I love <br></br> to{" "}
